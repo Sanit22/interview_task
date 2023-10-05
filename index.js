@@ -7,10 +7,6 @@ const port = 3000;
 // for parsing request body
 app.use(express.json());
 
-// MongoDB connection strings
-const writerConnectionString = "mongodb+srv://employeeApis:jasonroy@stage-emptra-mongo.bzzir.mongodb.net/stage-user-management-apis?retryWrites=true&w=majority";
-const readerConnectionString = "mongodb+srv://employeeApis:jasonroy@stage-emptra-mongo.bzzir.mongodb.net/stage-user-management-apis?retryWrites=true&w=majority";
-
 // writing connection
 const writerDB = mongoose.createConnection(writerConnectionString, {
   useNewUrlParser: true,
